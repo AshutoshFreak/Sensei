@@ -50,7 +50,10 @@ def get_all_problems(tags=None):
     url = 'https://codeforces.com/api/problemset.problems'
     if tags != None:
         url += f'?tags={tags}'
-    return getRes(url)
+    return saveResToFile(
+        url, 'problems.json' if tags == None else f'problems-{tags}.json')
+    # return getRes(url)
+
 
 if __name__ == "__main__":
 
@@ -76,7 +79,6 @@ if __name__ == "__main__":
                 counter[verdict] = 1
 
     print("Different counters", counter)
-
 
     active_users = save_active_users()
     print(f"There is a total of {len(active_users)} active users.")
