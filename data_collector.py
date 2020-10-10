@@ -6,6 +6,7 @@ import json
 os.makedirs('data', exist_ok=True)
 os.makedirs('data/json', exist_ok=True)
 os.makedirs('data/csv', exist_ok=True)
+os.makedirs('data/json/submissions', exist_ok=True)
 
 cf_handles = ['Fefer_Ivan']
 
@@ -28,7 +29,7 @@ def saveResToFile(url, filepath):
 
 def save_sumbission_list(cf_handle):
     return saveResToFile(
-        f'https://codeforces.com/api/user.status?handle={cf_handle}', f'submissions-{cf_handle}.json')
+        f'https://codeforces.com/api/user.status?handle={cf_handle}', f'submissions/submissions-{cf_handle}.json')
 
 
 def save_active_users():
