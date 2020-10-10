@@ -1,7 +1,8 @@
 import json
 import matplotlib.pyplot as plt
 
-RELIABLE_RANGE = (1000, 5000)
+# The number of solutions of a reliable question should lie in this range (Otherwise it's an outlier)
+RELIABLE_RANGE = (200, 5000)
 
 problems = json.load(open(f'data/json/problems.json'))['result']
 print("There are a total of ", len(
@@ -41,9 +42,8 @@ plt.show()
 plt.hist(solvedCounts, bins=50)
 plt.show()
 
-
-plt.bar(range(len(solvedCounts)), solvedCounts)
-plt.show()
+# plt.bar(range(len(solvedCounts)), solvedCounts)
+# plt.show()
 
 
 print("number of reliable submissions : ", reliableSubmissions)

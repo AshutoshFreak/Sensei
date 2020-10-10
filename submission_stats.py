@@ -1,10 +1,11 @@
 import json
 
 cf_handle = 'tourist'
+print("CF handle : ", cf_handle)
 user_submissions = json.load(open(f'data/json/submissions-{cf_handle}.json'))
 user_submissions = user_submissions['result']
 
-print(len(user_submissions))
+print("num of submissions :", len(user_submissions))
 
 counter = {}
 for submission_result in user_submissions:
@@ -14,6 +15,5 @@ for submission_result in user_submissions:
     else:
         counter[verdict] = 1
 
-print("Different counters", counter)
-print()
-print("JSON submission entry :", submission_result)
+print("Verdict frequencies :\n", counter ,'\n')
+print("submission JSON :\n", submission_result)

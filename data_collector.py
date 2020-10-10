@@ -2,10 +2,10 @@
 import requests
 import os
 import json
+
 os.makedirs('data', exist_ok=True)
 os.makedirs('data/json', exist_ok=True)
 os.makedirs('data/csv', exist_ok=True)
-
 
 cf_handles = ['Fefer_Ivan']
 
