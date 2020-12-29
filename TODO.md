@@ -19,7 +19,7 @@
 - [ ] Which tags of problems are the hardest to solve ? -> KShivendu
 <!-- - [ ] Visualization of clusters of different topics identified by hidden states of the RNN/Transformer based models. -->
 <!-- - [ ] Visualization of dependency of problems and topics on one another -->
-- [ ] Visualization of how the trends of most popular programming languages(for Competitive programming community) changed over time.  -> Ashutosh Sahu
+- [x] Visualization of how the trends of most popular programming languages(for Competitive programming community) changed over time.  -> Ashutosh Sahu
 <!-- - [ ] Storytelling of top coders, solved problems on Codeforces. Can be implemented using Flourish Studio.  -->
 
 ## Data analysis
